@@ -8,6 +8,7 @@
 
 #import "TimerViewController.h"
 #import "DelayViewController.h"
+#import "YZWeakProxy.h"
 
 @interface TimerViewController ()
 
@@ -32,20 +33,24 @@
     [button setBackgroundColor:[UIColor brownColor]];
     [button addTarget:self action:@selector(buttonClick) forControlEvents:(UIControlEventTouchUpInside)];
     [self.view addSubview:button];
+    
+    // 第二种方案
+    YZWeakProxy *proxy = [YZWeakProxy proxyWithTarget:self];
+     _timer = [NSTimer scheduledTimerWithTimeInterval:2.0 target:proxy selector:@selector(delay) userInfo:nil repeats:true];
 }
-// 解决方案1  满足不了push新vc时继续工作的需求
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-    // 当repeats的值为True时会造成循环引用
-    _timer = [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(delay) userInfo:nil repeats:true];
-}
-
-- (void)viewWillDisappear:(BOOL)animated
-{
-    [super viewWillDisappear:animated];
-    [_timer invalidate];
-}
+//// 解决方案1  满足不了push新vc时继续工作的需求
+//- (void)viewWillAppear:(BOOL)animated
+//{
+//    [super viewWillAppear:animated];
+//    // 当repeats的值为True时会造成循环引用
+//    _timer = [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(delay) userInfo:nil repeats:true];
+//}
+//
+//- (void)viewWillDisappear:(BOOL)animated
+//{
+//    [super viewWillDisappear:animated];
+//    [_timer invalidate];
+//}
 
 - (void)delay
 {
@@ -60,6 +65,7 @@
 
 - (void)dealloc
 {
+    [_timer invalidate];
     NSLog(@"TimerViewController dealloc");
 }
 @end

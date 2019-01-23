@@ -17,6 +17,7 @@
 		81C806D421F7FF6E00F2ABD0 /* LearnDelayLoadingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C806D321F7FF6E00F2ABD0 /* LearnDelayLoadingUITests.m */; };
 		81C806E321F8005700F2ABD0 /* DelayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C806E221F8005700F2ABD0 /* DelayViewController.m */; };
 		81C806E621F8115300F2ABD0 /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C806E521F8115300F2ABD0 /* TimerViewController.m */; };
+		81C806E921F8161A00F2ABD0 /* YZWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C806E821F8161A00F2ABD0 /* YZWeakProxy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		81C806E221F8005700F2ABD0 /* DelayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DelayViewController.m; sourceTree = "<group>"; };
 		81C806E421F8115300F2ABD0 /* TimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimerViewController.h; sourceTree = "<group>"; };
 		81C806E521F8115300F2ABD0 /* TimerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerViewController.m; sourceTree = "<group>"; };
+		81C806E721F8161A00F2ABD0 /* YZWeakProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZWeakProxy.h; sourceTree = "<group>"; };
+		81C806E821F8161A00F2ABD0 /* YZWeakProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZWeakProxy.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +123,8 @@
 				81C806E221F8005700F2ABD0 /* DelayViewController.m */,
 				81C806E421F8115300F2ABD0 /* TimerViewController.h */,
 				81C806E521F8115300F2ABD0 /* TimerViewController.m */,
+				81C806E721F8161A00F2ABD0 /* YZWeakProxy.h */,
+				81C806E821F8161A00F2ABD0 /* YZWeakProxy.m */,
 			);
 			path = LearnDelayLoading;
 			sourceTree = "<group>";
@@ -276,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81C806B421F7FF6E00F2ABD0 /* ViewController.m in Sources */,
+				81C806E921F8161A00F2ABD0 /* YZWeakProxy.m in Sources */,
 				81C806BF21F7FF6E00F2ABD0 /* main.m in Sources */,
 				81C806E621F8115300F2ABD0 /* TimerViewController.m in Sources */,
 				81C806E321F8005700F2ABD0 /* DelayViewController.m in Sources */,
