@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "DelayViewController.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    DelayViewController *vc = [[DelayViewController alloc]init];
+    [self.navigationController pushViewController:vc animated:true];
 }
 
 

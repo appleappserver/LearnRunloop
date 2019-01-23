@@ -15,6 +15,7 @@
 		81C806BF21F7FF6E00F2ABD0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C806BE21F7FF6E00F2ABD0 /* main.m */; };
 		81C806C921F7FF6E00F2ABD0 /* LearnDelayLoadingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C806C821F7FF6E00F2ABD0 /* LearnDelayLoadingTests.m */; };
 		81C806D421F7FF6E00F2ABD0 /* LearnDelayLoadingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C806D321F7FF6E00F2ABD0 /* LearnDelayLoadingUITests.m */; };
+		81C806E321F8005700F2ABD0 /* DelayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C806E221F8005700F2ABD0 /* DelayViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		81C806CF21F7FF6E00F2ABD0 /* LearnDelayLoadingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearnDelayLoadingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		81C806D321F7FF6E00F2ABD0 /* LearnDelayLoadingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LearnDelayLoadingUITests.m; sourceTree = "<group>"; };
 		81C806D521F7FF6E00F2ABD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81C806E121F8005700F2ABD0 /* DelayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DelayViewController.h; sourceTree = "<group>"; };
+		81C806E221F8005700F2ABD0 /* DelayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DelayViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				81C806BA21F7FF6E00F2ABD0 /* LaunchScreen.storyboard */,
 				81C806BD21F7FF6E00F2ABD0 /* Info.plist */,
 				81C806BE21F7FF6E00F2ABD0 /* main.m */,
+				81C806E121F8005700F2ABD0 /* DelayViewController.h */,
+				81C806E221F8005700F2ABD0 /* DelayViewController.m */,
 			);
 			path = LearnDelayLoading;
 			sourceTree = "<group>";
@@ -267,6 +272,7 @@
 			files = (
 				81C806B421F7FF6E00F2ABD0 /* ViewController.m in Sources */,
 				81C806BF21F7FF6E00F2ABD0 /* main.m in Sources */,
+				81C806E321F8005700F2ABD0 /* DelayViewController.m in Sources */,
 				81C806B121F7FF6E00F2ABD0 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
