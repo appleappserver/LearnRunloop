@@ -38,7 +38,16 @@ typedef void(^PDDelayedBlockHandle)(BOOL cancel);
     if (i % 2 == 0) {
         NSLog(@"delay load");
         // 1. 第一种
-        [self performSelector:@selector(delay:) withObject:@"performSelector" afterDelay:2.0f];
+        [NSThread detachNewThreadWithBlock:^{
+            // 在子线程不启动
+            [self performSelector:@selector(delay:) withObject:@"performSelector" afterDelay:2.0f];
+            // 解决 ： 启动runloop
+            NSRunLoop *runloop = [NSRunLoop currentRunLoop];
+            [runloop addPort:[NSMachPort port] forMode:NSDefaultRunLoopMode];
+            [runloop run];
+            // 回到主线程处理
+            [self performSelectorOnMainThread:@selector(delay:) withObject:@"performSelectorOnMainThread" waitUntilDone:false];
+        }];
         
         // 2. 第二种
         _timer = [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(delay:) userInfo:@"NSTimer" repeats:true];
