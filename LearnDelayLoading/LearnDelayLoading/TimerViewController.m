@@ -36,7 +36,7 @@
     
     // 第二种方案
     YZWeakProxy *proxy = [YZWeakProxy proxyWithTarget:self];
-     _timer = [NSTimer scheduledTimerWithTimeInterval:2.0 target:proxy selector:@selector(delay) userInfo:nil repeats:true];
+     _timer = [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(delay) userInfo:nil repeats:true];
 }
 //// 解决方案1  满足不了push新vc时继续工作的需求
 //- (void)viewWillAppear:(BOOL)animated

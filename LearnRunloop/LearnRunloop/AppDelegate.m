@@ -1,9 +1,9 @@
 //
 //  AppDelegate.m
-//  LearnDelayLoading
+//  LearnRunloop
 //
-//  Created by ios on 2019/1/23.
-//  Copyright © 2019年 KN. All rights reserved.
+//  Created by ios on 2019/1/30.
+//  Copyright © 2019 KN. All rights reserved.
 //
 
 #import "AppDelegate.h"
@@ -30,7 +30,6 @@
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-    
 }
 
 
